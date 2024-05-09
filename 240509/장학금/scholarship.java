@@ -8,9 +8,9 @@ public class Main {
         int b = sc.nextInt();
 
         if(90<=a && 95<=b) {
-            System.out.println(10);
+            System.out.println(100000);
         } else if(90<=a && 90<=b) {
-            System.out.println(5);
+            System.out.println(50000);
         } else {
             System.out.println(0);
         }
