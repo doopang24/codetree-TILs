@@ -9,7 +9,7 @@ public class Main {
 
         for(int i=1; i<=100; i++) {
             a += i;
-            if(a>n) {
+            if(a>=n) {
                 System.out.print(i);
                 break;
             }
