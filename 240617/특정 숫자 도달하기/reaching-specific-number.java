@@ -15,6 +15,7 @@ public class Main {
             sum += arr[i];
             avr = sum/(i+1.0);
             if(arr[i+1]>=250) break;
+            else if(i==9) break;
         }
         System.out.print(sum+" ");
         System.out.printf("%.1f",avr);
