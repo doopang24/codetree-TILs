@@ -12,10 +12,9 @@ public class Main {
             arr[i] = sc.nextInt();
         }
         for(int i=0; i<arr.length; i++) {
+            if(arr[i]>=250) break;
             sum += arr[i];
             avr = sum/(i+1.0);
-            if(arr[i+1]>=250) break;
-            else if(i==9) break;
         }
         System.out.print(sum+" ");
         System.out.printf("%.1f",avr);
