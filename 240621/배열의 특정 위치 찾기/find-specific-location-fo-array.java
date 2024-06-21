@@ -12,7 +12,7 @@ public class Main {
         for(int i=0; i<10; i++) {
             arr[i] = sc.nextInt();
             if(i%2!=0) sum += arr[i];
-            else if((i+1)%3==0) {
+            if((i+1)%3==0) {
                 sum3 += arr[i];
                 cnt++;
             }
