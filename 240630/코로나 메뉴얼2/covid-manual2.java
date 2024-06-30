@@ -19,7 +19,7 @@ public class Main {
                 if(tem>=37) arr[0]++;
                 else arr[2]++;
             } else {
-                if(tem>37) arr[1]++;
+                if(tem>=37) arr[1]++;
                 else arr[3]++;
             }
         }
