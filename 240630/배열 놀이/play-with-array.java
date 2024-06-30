@@ -32,6 +32,7 @@ public class Main {
                 for(int j=s-1; j<e; j++) {
                     System.out.print(nArr[j]+" ");
                 }
+                System.out.println();
             }
         }
     }
