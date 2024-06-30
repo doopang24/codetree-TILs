@@ -17,9 +17,9 @@ public class Main {
 
             if(c=='Y') {
                 if(tem>=37) arr[0]++;
-                else arr[1]++;
+                else arr[2]++;
             } else {
-                if(tem>37) arr[2]++;
+                if(tem>37) arr[1]++;
                 else arr[3]++;
             }
         }
