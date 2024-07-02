@@ -6,25 +6,30 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
         int[] arr = new int[n];
+        int[] arr2 = new int[n];
         
         for(int i=0; i<n; i++) {
             arr[i] = sc.nextInt();
         }
 
-        boolean check = false;
+        boolean same = false;
         for(int i=0; i<n; i++) {
+            boolean check = false;
             for(int j=0; j<n; j++) {
                 if(arr[i]==arr[j] && i!=j) {
-                    arr[j] = 0;
                     check = true;
+                    same = true;
                 }
             }
+            if(!check) arr2[i] = arr[i];
         }
+        
         int max = 0;
         for(int i=0; i<n; i++) {
-            if(max<arr[i]) max = arr[i];
+            if(max<arr2[i]) max = arr2[i];
         }
-        if(check) System.out.print(max);
+
+        if(same) System.out.print(max);
         else System.out.print(-1);
     }
 }
