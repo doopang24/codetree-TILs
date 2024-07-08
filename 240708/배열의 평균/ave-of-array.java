@@ -32,6 +32,6 @@ public class Main {
         }
         System.out.println(sumJ0/2.0+" "+sumJ1/2.0+" "+sumJ2/2.0+" "+sumJ3/2.0);
 
-        System.out.print(sumTotal/8.0);
+        System.out.printf("%.1f",sumTotal/8.0);
     }
 }
