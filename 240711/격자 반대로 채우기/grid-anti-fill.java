@@ -12,14 +12,13 @@ public class Main {
             if(row%2==0) {
                 for(int i=n-1; i>=0; i--) {
                     arr2D[i][j] = value++;
-                    row++;
                 }
             } else {
                 for(int i=0; i<n; i++) {
                     arr2D[i][j] = value++;
-                    row++;
                 }
             }
+            row++;
         }
 
         for(int i=0; i<n; i++) {
