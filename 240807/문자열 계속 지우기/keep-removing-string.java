@@ -12,6 +12,7 @@ public class Main {
             for(int i=0; i<A.length()-b; i++) {
                 if(A.substring(i,i+b).equals(B)) {
                     A = A.substring(0,i) + A.substring(i+b,A.length());
+                    break;
                 } 
             }
         }
