@@ -16,11 +16,12 @@ public class Main {
                 str = str.substring(str.length()-1,str.length()) + str.substring(0,str.length()-1);
                 System.out.println(str);
             } else {
-                String str2 = "";
+                String tmp = "";
                 for(int j=str.length()-1; j>=0; j--) {
-                    str2 += str.charAt(j);
+                    tmp += str.charAt(j);
                 }
-                System.out.println(str2);
+                str = tmp;
+                System.out.println(str);
             }
         }
     }
