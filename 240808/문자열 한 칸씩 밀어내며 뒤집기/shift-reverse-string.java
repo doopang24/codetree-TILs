@@ -10,19 +10,27 @@ public class Main {
         for(int i=0; i<q; i++) {
             int num = sc.nextInt();
             if(num==1) {
-                str = str.substring(1,str.length()) + str.substring(0,1);
+                str = rotateLeft(str,1);
                 System.out.println(str);
             } else if(num==2) {
-                str = str.substring(str.length()-1,str.length()) + str.substring(0,str.length()-1);
+                str = rotateRight(str, 1);
                 System.out.println(str);
             } else {
-                String tmp = "";
-                for(int j=str.length()-1; j>=0; j--) {
-                    tmp += str.charAt(j);
-                }
-                str = tmp;
+                str = reverse(str);
                 System.out.println(str);
             }
         }
+    }
+
+    public static String rotateLeft(String str, int d) {
+        return str.substring(d) + str.substring(0,d);
+    }
+
+    public static String rotateRight(String str, int d) {
+        return str.substring(str.length()-d) + str.substring(0,str.length()-d);
+    }
+
+    public static String reverse(String str) {
+        return new StringBuilder(str).reverse().toString();
     }
 }
