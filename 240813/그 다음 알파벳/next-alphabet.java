@@ -6,7 +6,12 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         char ch = sc.next().charAt(0);
         int chInt = (int)ch;
-        chInt++;
+        
+        if(chInt==122) {
+            chInt = 97;
+        } else {
+            chInt++;
+        }
 
         System.out.print((char)chInt);
     }
