@@ -8,7 +8,7 @@ public class Main {
         String result = "";
 
         for(int i=0; i<str.length(); i++) {
-            if('1'<=str.charAt(i) && str.charAt(i)<='9') {
+            if('0'<=str.charAt(i) && str.charAt(i)<='9') {
                 result += str.charAt(i);
             } else if('A'<=str.charAt(i) && str.charAt(i)<='Z') {
                 char word = str.charAt(i);
