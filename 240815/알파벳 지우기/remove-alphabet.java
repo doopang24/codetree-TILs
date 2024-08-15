@@ -15,7 +15,7 @@ public class Main {
             }
         }
         for(int i=0; i<B.length(); i++) {
-            if('0'<=B.charAt(i) && B.charAt(i)<'9') {
+            if('0'<=B.charAt(i) && B.charAt(i)<='9') {
                 b += B.charAt(i);
             }
         }
