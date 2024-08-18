@@ -9,13 +9,13 @@ public class Main {
         String B = sc.next();
         int cnt = 0;
 
-        for(int i=0; i<A.length(); i++) {
+        for(int i=0; i<=A.length(); i++) {
             A = A.substring(a-1) + A.substring(0,a-1);
             cnt++;
             if(A.equals(B)) break;
         }
 
-        if(cnt==0) System.out.print(-1);
+        if(cnt==7) System.out.print(-1);
         else System.out.print(cnt);
     }
 }
