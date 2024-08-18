@@ -15,7 +15,7 @@ public class Main {
             if(A.equals(B)) break;
         }
 
-        if(cnt==7) System.out.print(-1);
+        if(cnt==a+1) System.out.print(-1);
         else System.out.print(cnt);
     }
 }
